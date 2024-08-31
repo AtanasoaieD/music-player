@@ -128,17 +128,32 @@ function updateProgressBar(e){
         
         //Calculate display for currentTime
         const currentMinutes = Math.floor(currentTime / 60)
-        console.log('minutes',currentMinutes)
+        
         let currentSeconds = Math.floor(currentTime%60)
         if(currentSeconds<10){
             currentSeconds=`0${currentSeconds}`}
-        console.log('seconds',currentSeconds);
+        
         currentTimeEl.textContent = `${currentMinutes}:${currentSeconds}`
 
     }
 }
 
+//Set Progress Bar
+function setProgressBar(e){
+   
+    const width = this.clientWidth
+    console.log('width',width)
+    const clickX = e.offsetX
+    console.log('clickX',clickX)
+    const{duration} = music;
+    console.log(clickX/width)
+    console.log((clickX/width)*duration)
+    music.currentTime = (clickX/width)*duration
+}
+
 //Event listener
 prevBtn.addEventListener('click',prevSong)
 nextBtn.addEventListener('click',nextSong)
+music.addEventListener('ended',nextSong)
 music.addEventListener('timeupdate',updateProgressBar)
+progressContainer.addEventListener('click',setProgressBar)
