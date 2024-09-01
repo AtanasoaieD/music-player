@@ -15,27 +15,27 @@ const nextBtn = document.getElementById('next')
 //Music  
 const songs=[
     {
-        name:'jacinto-1',
-        displayName:'Electric Chill',
-        artist:'Jacinto Design',
+        name:'Dreams',
+        displayName:'Dreams',
+        artist:'FleetWood Mac',
         
     },
 
     {
-        name:'jacinto-2',
-        displayName:'Seven nation army remix',
-        artist:'Jacinto Design',
+        name:'D you Know What I Mean',
+        displayName:'D you Know What I Mean',
+        artist:'Oasis',
         
     },
     {
-        name:'jacinto-3',
-        displayName:'goodnight',
-        artist:'Jacinto Design'
+        name:'Low Rider',
+        displayName:'Low Rider',
+        artist:'War'
     },
     {
-        name:'metric-1',
-        displayName:'front-row',
-        artist:'Metric/Jacinto Design'
+        name:'Smells Like Teen Spirit',
+        displayName:'Smells Like Teen Spirit',
+        artist:'Nirvana'
     }
 
 
